@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.card{
+  background-color: rgb(137, 27, 27);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+
+}
