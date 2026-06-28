@@ -1,0 +1,10 @@
+.header{
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px 20px;
+}
+.btn{
+    background-color: cadetblue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
