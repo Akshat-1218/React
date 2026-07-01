@@ -1,4 +1,4 @@
-*{
+/* *{
   margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -97,4 +97,103 @@ html,body{
   padding: 5px 10px;
   font-size: 14px;
   font-weight: 600;
+} */
+
+/* Practice */
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,body{
+  height:100%;
+  width: 100%;
+}
+.parent{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.card{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 330px;
+  width: 280px;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid grey;
+  border-radius: 20px;
+}
+.header{
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header img{
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.header button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  background-color: white;
+  color: black;
+}
+
+.center h2{
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.center h2 span{
+  font-size: 10px;
+  opacity: 0.8;
+}
+.center h1{
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+.center .tag{
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+}
+.center .tag h4{
+  font-size: 12px;
+  background-color: #e4e4e4;
+  color: #202020;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+.footer{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid black ;
+}
+.footer p{
+  opacity: 0.8;
+  font-size: 12px;
+}
+.footer button{
+  border: 2px solid black;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background-color: black;
+  color:white
 }

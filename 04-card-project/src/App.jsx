@@ -1,5 +1,5 @@
 import React from 'react'
-import {Bookmark} from 'lucide-react'
+import {Book, Bookmark} from 'lucide-react'
 import Card from './components/Card.jsx';
 
 const jobOpenings = [
@@ -107,11 +107,18 @@ const jobOpenings = [
 
 const App = () => {
   return (
+    // <div className="parent">
+    //   {jobOpenings.map(function(elem, idx) {
+    //     return <Card key={idx} brandLogo={elem.brandLogo}company={elem.companyName} date={elem.datePosted} post={elem.post} tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.location} />
+    //   })}
+    // </div>
+
     <div className="parent">
-      {jobOpenings.map(function(elem, idx) {
-        return <Card key={idx} brandLogo={elem.brandLogo}company={elem.companyName} date={elem.datePosted} post={elem.post} tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.location} />
+      {jobOpenings.map(function(elem,idx){
+        return <Card key={idx} companyName={elem.companyName} date={elem.datePosted} post={elem.post} tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} loc={elem.location} />
       })}
     </div>
+    
   )
 }
 

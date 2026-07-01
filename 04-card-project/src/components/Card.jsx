@@ -3,29 +3,53 @@ import { Bookmark } from 'lucide-react'
 
 const Card = (props) => {
   return (
-    <div className="card">
-      <div>
+    // <div className="card">
+    //   <div>
+    //     <div className="header">
+    //       <img src={props.brandLogo} alt="company logo" />
+    //       <button>Save <Bookmark size={15} /></button>
+    //     </div>
+    //     <div className="center">
+    //       <h3>{props.company} <span>{props.date}</span></h3>
+    //       <h2>{props.post}</h2>
+    //       <div className='tag'>
+    //         <h4>{props.tag1}</h4>
+    //         <h4>{props.tag2}</h4>
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <div className="footer">
+    //     <div>
+    //       <h4>{props.pay}</h4>
+    //       <p>{props.location}</p>
+    //     </div>
+    //     <button>Apply Now</button>
+    //   </div>
+    // </div>
+
+      <div className="card">
+        <div>
         <div className="header">
-          <img src={props.brandLogo} alt="company logo" />
-          <button>Save <Bookmark size={15} /></button>
-        </div>
-        <div className="center">
-          <h3>{props.company} <span>{props.date}</span></h3>
-          <h2>{props.post}</h2>
-          <div className='tag'>
+          <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg" alt="" />
+          <button>Save <Bookmark size={15}/> </button>
+          </div>
+          <div className="center">
+            <h2>{props.companyName} <span>{props.date}</span></h2>
+            <h1>{props.post}</h1>
+            <div className="tag">
             <h4>{props.tag1}</h4>
             <h4>{props.tag2}</h4>
+            </div>
           </div>
-        </div>
+          </div>
+          <div className="footer">
+            <div className="pay">
+              <h4>{props.pay}</h4>
+              <p>{props.loc}</p>
+            </div>
+            <button>Apply Now</button>
+          </div>
       </div>
-      <div className="footer">
-        <div>
-          <h4>{props.pay}</h4>
-          <p>{props.location}</p>
-        </div>
-        <button>Apply Now</button>
-      </div>
-    </div>
   )
 }
 
